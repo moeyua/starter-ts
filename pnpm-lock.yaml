@@ -20,9 +20,6 @@ importers:
       eslint:
         specifier: ^9.3.0
         version: 9.3.0
-      pnpm:
-        specifier: ^9.1.1
-        version: 9.1.1
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -1990,11 +1987,6 @@ packages:
   pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
-
-  pnpm@9.1.1:
-    resolution: {integrity: sha512-FOkVdZwR936sB/q6TQGcGT7IY3Ip5i7Jnu+3zzw7dcZER4grfEhRQkUe46a0CAWc37e3+gNBuXXxLQ92KccRlQ==}
-    engines: {node: '>=18.12'}
-    hasBin: true
 
   postcss-calc@10.0.0:
     resolution: {integrity: sha512-OmjhudoNTP0QleZCwl1i6NeBwN+5MZbY5ersLZz69mjJiDVv/p57RjRuKDkHeDWr4T+S97wQfsqRTNoDHB2e3g==}
@@ -4684,8 +4676,6 @@ snapshots:
       pathe: 1.1.2
 
   pluralize@8.0.0: {}
-
-  pnpm@9.1.1: {}
 
   postcss-calc@10.0.0(postcss@8.4.38):
     dependencies:
