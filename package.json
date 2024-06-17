@@ -9,29 +9,22 @@
   "keywords": [],
   "sideEffects": false,
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+    "import": {
+      "types": "./dist/es/index.d.ts",
+      "default": "./dist/es/index.js"
+    },
+    "require": {
+      "types": "./dist/cjs/index.d.cts",
+      "default": "./dist/cjs/index.cjs"
     }
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.mjs",
+  "types": "./dist/cjs/index.d.ts",
+  "files": ["dist"],
   "scripts": {
-    "build": "unbuild",
-    "dev": "unbuild --stub",
+    "dev": "bunchee --watch",
+    "build": "bunchee -m",
     "lint": "eslint .",
     "prepublishOnly": "pnpm build",
     "release": "bumpp && npm publish",
@@ -41,8 +34,9 @@
     "@antfu/eslint-config": "^2.18.1",
     "@types/node": "^20.12.12",
     "bumpp": "^9.4.1",
+    "bunchee": "^5.2.0",
     "eslint": "^9.3.0",
-    "typescript": "^5.4.5",
-    "unbuild": "^2.0.0"
+    "typescript": "^5.4.5"
+
   }
 }
